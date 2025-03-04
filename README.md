@@ -3,13 +3,19 @@
 This project builds a real-time stock market data processing pipeline using **Kafka** and **AWS services**. It simulates stock market data, ingests it into Kafka, consumes and stores it in **Amazon S3**, catalogs it using **AWS Glue**, and analyzes it with **Amazon Athena**.
 
 ## Architecture  
-![kafka]()
-
+![kafka](https://github.com/sahilbishnoi26/Kafka-Real-Time-Data-Pipeline/blob/main/img/img0.png)
 1. **Data Simulation**: Reads historical stock market data and streams it in real time.  
-2. **Kafka Producer**: Pushes simulated stock market events to a **Kafka** cluster.  
-3. **Kafka Consumer**: Reads data from Kafka and stores it in **Amazon S3**.  
-4. **AWS Glue**: Crawls S3 data and builds a **Glue Catalog** for structured querying.  
-5. **Amazon Athena**: Queries real-time stock market data using **SQL**.  
+2. **Kafka Producer**: Pushes simulated stock market events to a **Kafka** cluster.
+![kafka](https://github.com/sahilbishnoi26/Kafka-Real-Time-Data-Pipeline/blob/main/img/img1.png)
+![kafka](https://github.com/sahilbishnoi26/Kafka-Real-Time-Data-Pipeline/blob/main/img/img2.png)
+4. **Kafka Consumer**: Reads data from Kafka and stores it in **Amazon S3**.
+![kafka](https://github.com/sahilbishnoi26/Kafka-Real-Time-Data-Pipeline/blob/main/img/img3.png)
+![kafka](https://github.com/sahilbishnoi26/Kafka-Real-Time-Data-Pipeline/blob/main/img/img5.png)
+![kafka](https://github.com/sahilbishnoi26/Kafka-Real-Time-Data-Pipeline/blob/main/img/img6.png)
+![kafka](https://github.com/sahilbishnoi26/Kafka-Real-Time-Data-Pipeline/blob/main/img/img7.png)
+![kafka](https://github.com/sahilbishnoi26/Kafka-Real-Time-Data-Pipeline/blob/main/img/img8.png)
+6. **AWS Glue**: Crawls S3 data and builds a **Glue Catalog** for structured querying.  
+7. **Amazon Athena**: Queries real-time stock market data using **SQL**.  
 
 ## Tech Stack  
 - **Kafka** (Event Streaming)  
