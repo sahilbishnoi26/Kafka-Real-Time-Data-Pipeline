@@ -3,6 +3,8 @@
 This project builds a real-time stock market data processing pipeline using **Kafka** and **AWS services**. It simulates stock market data, ingests it into Kafka, consumes and stores it in **Amazon S3**, catalogs it using **AWS Glue**, and analyzes it with **Amazon Athena**.
 
 ## Architecture  
+![kafka]()
+
 1. **Data Simulation**: Reads historical stock market data and streams it in real time.  
 2. **Kafka Producer**: Pushes simulated stock market events to a **Kafka** cluster.  
 3. **Kafka Consumer**: Reads data from Kafka and stores it in **Amazon S3**.  
